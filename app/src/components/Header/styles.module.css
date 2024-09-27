@@ -1,0 +1,110 @@
+.header {
+  max-width: 1225px;
+  position: fixed;
+  top: 0;
+  left: 0px;
+  z-index: 90;
+  background: #ffffff;
+  -webkit-box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.header__inner {
+  width: 1100px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.header__logo {
+  display: flex;
+  flex-direction: row;
+  width: 380px;
+}
+.header__logo .logo {
+  width: 65px;
+  height: 65px;
+  padding-top: 5px;
+  margin: 0 20px;
+}
+.header__logo .logo .img {
+  width: 65px;
+  height: 65px;
+}
+.header__logo .Pletnev {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.header__logo .slogan {
+  font-size: 19px;
+}
+.header__menu {
+  flex: 1 1 300px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.header__menu__item {
+  height: 100%;
+  flex: 1 1 150px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.header__phone {
+  max-width: 200px;
+  font-size: 18px;
+  line-height: 26px;
+  color: #333333;
+}
+.header__phone a {
+  text-decoration: none;
+  color: inherit;
+}
+.header__btn {
+  border: 2px solid #fa2424;
+  color: #fa2424;
+  padding: 0;
+  background: #ffffff;
+}
+@media (max-width: 1199px) {
+  .header .header__menu {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+  }
+}
+@media (min-width: 1200px) {
+  .header .header__menu {
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    left: 270px;
+    width: calc(100% - 270px);
+  }
+}
+@media (min-width: 1920px) {
+  .header {
+    left: 296px;
+    width: calc(100% - 295px);
+  }
+}

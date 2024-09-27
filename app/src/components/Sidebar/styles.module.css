@@ -1,0 +1,115 @@
+.sidebar {
+  height: 100vh;
+  flex: 0 0 300px;
+  max-width: 300px;
+  position: fixed;
+}
+.sidebar__inner {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  position: relative;
+  z-index: 100;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 45px);
+  padding-left: 35px;
+  border-right: 1px solid #e0e0e0;
+}
+.sidebar__logo {
+  margin-bottom: 30px;
+  flex: 0 0 100px;
+}
+.sidebar__logo .logo {
+  padding-top: 40px;
+  font-size: 32px;
+  max-width: 162px;
+  font-family: "Nullchock";
+  color: #fa2424;
+}
+.sidebar__photo {
+  margin-bottom: 87px;
+  flex: 0 0 250px;
+}
+.sidebar__photo .photo {
+  width: 230px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  border-radius: 50%;
+  border-bottom: #fa2424 3px solid;
+  border-right: #fa2424 3px solid;
+}
+.sidebar__menu {
+  flex: 1 1 900px;
+}
+.sidebar__menu .menu__list {
+  list-style: none;
+}
+.sidebar__menu .menu__list .menu__item {
+  margin-bottom: 17px;
+  color: #333333;
+}
+.sidebar__menu .menu__list .menu__item div, .sidebar__menu .menu__list .menu__item .link {
+  -webkit-transition: 200ms;
+  -o-transition: 200ms;
+  transition: 200ms;
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+.sidebar__menu .menu__list .menu__item:hover {
+  padding-left: 18px;
+}
+.sidebar__menu .menu__list .menu__item:hover ::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 12px;
+  background: url("img/arrow-menu-right.svg") no-repeat;
+  top: 50%;
+  left: -20px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.sidebar .QRcode {
+  flex: 1 1 400px;
+  padding-left: 40px;
+  padding-top: 15px;
+}
+.sidebar .QRcode div {
+  font-weight: bold;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: inherit;
+}
+.sidebar .QRcode img {
+  margin: 1px 0 20px 0;
+}
+
+@media (max-width: 1199px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .sidebar__inner {
+    display: flex;
+    height: inherit;
+    position: relative;
+    z-index: 100;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
